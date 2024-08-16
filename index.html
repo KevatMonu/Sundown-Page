@@ -1,76 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sundown Studio</title>
-    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div id="main">
-   <div id="page1">  
-      <nav>
-         <div class="logo">
-                 <img src="logo.svg" alt="">
-              </div>
-              <div class="nav-elem">
-                  <h4><a href="#">Work</a></h4>
-                  <h4><a href="#">Studio</a></h4>
-                     <h4><a href="#">Contact</a></h4>
-         </div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="fixed-img"></div>
+
+    <div id="main">
+      <div id="page1">
+        <nav>
+          <div class="logo">
+            <img src="logo.svg" alt="" />
+          </div>
+          <div class="nav-elem">
+            <h4><a href="#">Work</a></h4>
+            <h4><a href="#">Studio</a></h4>
+            <h4><a href="#">Contact</a></h4>
+          </div>
         </nav>
 
-      <div class="center">
-         <div class="left">
-            <h3>Sundown is a multi-disciplinary studio focused on creating unique, end-to-end experiences and environments.</h3>
-         </div>
-         <div class="right">
-            <h1>SPACES<br>
-               THAT<br>
-               INSPIRE
-               </h1>
-         </div>
+        <div class="center">
+          <div class="left">
+            <h3>
+              Sundown is a multi-disciplinary studio focused on creating unique,
+              end-to-end experiences and environments.
+            </h3>
+          </div>
+          <div class="right">
+            <h1>
+              SPACES<br />
+              THAT<br />
+              INSPIRE
+            </h1>
+          </div>
+        </div>
+        <div class="hero-shape">
+          <div class="hero1"></div>
+          <div class="hero2"></div>
+          <div class="hero3"></div>
+        </div>
+        <video autoplay muted loop src="asset/video/video1.mp4"></video>
       </div>
-      <div class="hero-shape">
-         <div class="hero1"></div>
-         <div class="hero2"></div>
-         <div class="hero3"></div>
-      </div>
-      <video  autoplay muted loop src="asset/video/video1.mp4"></video>
-   </div>
 
-   <div id="page2">
-      <div class="moving-text">
-         <div class="move">
+      <div id="page2">
+        <div class="moving-text">
+          <div class="move">
             <h1>EXPERIENCES</h1>
             <div id="ball"></div>
-            <h1>CONTENT</h1>
+            <h1>ENVIRONMENT</h1>
             <div id="ball"></div>
             <h1>CONTENT</h1>
             <div id="ball"></div>
-         </div>
+          </div>
 
-         <div class="move">
+          <div class="move">
             <h1>EXPERIENCES</h1>
             <div id="ball"></div>
-            <h1>CONTENT</h1>
+            <h1>ENVIRONMENT</h1>
             <div id="ball"></div>
             <h1>CONTENT</h1>
             <div id="ball"></div>
-         </div>
+          </div>
 
-         <div class="move">
+          <div class="move">
             <h1>EXPERIENCES</h1>
             <div id="ball"></div>
-            <h1>CONTENT</h1>
+            <h1>ENVIRONMENT</h1>
             <div id="ball"></div>
             <h1>CONTENT</h1>
             <div id="ball"></div>
-         </div>
+          </div>
+        </div>
+
+        <div id="page2-bottom">
+          <div class="part1">
+            <h1>
+              We are a group of design- <br />
+              driven, goal-focused creators,<br />
+              producers, and designers<br />
+              who believe that the details <br />make all the difference.
+            </h1>
+          </div>
+          <div class="part2">
+            <img src="asset/image/img 1 nike.webp" alt="" />
+            <p>
+              We love to create, we love to solve, we love to collaborate, and
+              we love to turn amazing ideas into reality. We’re here to partner
+              with you through every step of the process and know that
+              relationships are the most important things we build.
+            </p>
+          </div>
+          <div class="golaa"></div>
+        </div>
       </div>
-   </div>
-</div>
-<script src="script.js"></script>
-</body>
+
+      <div id="page3">
+        <div class="banner-list">
+          <div class="banner" data-image="asset/image/banner1.jpeg">
+            <h1>NYFW Popup</h1>
+            <div class="banner-tittle2">
+              <h3>AFTERPAY</h3>
+              <h4>Experiential</h4>
+            </div>
+          </div>
+
+          <div class="banner" data-image="asset/image/banner2.jpeg">
+            <h1>Converse SoHo</h1>
+            <div class="banner-tittle2">
+              <h3>CONVERSE</h3>
+              <h4>Environment</h4>
+            </div>
+          </div>
+
+          <div class="banner" data-image="asset/image/banner3.jpeg">
+            <h1>50th Anniversary</h1>
+            <div class="banner-tittle2">
+              <h3>NIKE</h3>
+              <h4>Environment</h4>
+            </div>
+          </div>
+
+          <div class="banner" data-image="asset/image/banner4.jpeg">
+            <h1>Carmelo Anthony 7pm In Brooklyn Set</h1>
+            <div class="banner-tittle2">
+              <h3>WAVE SPORTS ENTERTAINMENT</h3>
+              <h4>Environment</h4>
+            </div>
+          </div>
+
+          <div class="banner" data-image="asset/image/banner5.jpeg">
+            <h1>Makers Studio HOI</h1>
+            <div class="banner-tittle2">
+              <h3>NIKE</h3>
+              <h4>Environment</h4>
+            </div>
+          </div>
+
+          <div class="banner" data-image="asset/image/banner6.jpeg">
+            <h1>Play New Kidvision</h1>
+            <div class="banner-tittle2">
+              <h3>NIKE</h3>
+              <h4>Environment</h4>
+            </div>
+          </div>
+
+          <div class="banner" data-image="asset/image/banner7.jpeg">
+            <h1>Kelce Super Bowl Party</h1>
+            <div class="banner-tittle2">
+              <h3>WAVE SPORTS ENTERTAINMENT</h3>
+              <h4>Environment</h4>
+            </div>
+          </div>
+
+          <div class="banner" data-image="asset/image/banner8.jpeg">
+            <h1>Capezio NYC Flagship</h1>
+            <div class="banner-tittle2">
+              <h3>CAPEZIO</h3>
+              <h4>Environment</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="page4">
+        <div class="back-box">
+          <div class="box1">
+            <div class="box1-1">
+              <h1
+                class="text"
+                onclick="handleClick(0, 'asset/image/textimg1.webp')"
+              >
+                Design
+              </h1>
+              <h1
+                class="text"
+                onclick="handleClick(1, 'asset/image/textimg2.webp')"
+              >
+                Project
+              </h1>
+              <h1
+                class="text"
+                onclick="handleClick(2, 'asset/image/textimg3.webp')"
+              >
+                Execution
+              </h1>
+            </div>
+            <div class="box1-2">
+              <p id="para1" class="paragraph">
+                Our team works with our clients to refine an idea and concept
+                into an executable design. We create a final design that
+                encompasses the brand narrative to bring stories to life and
+                provide end-to-end design solutions from concept, design, and
+                architectural drawings to 3D renderings.
+              </p>
+
+              <p id="para2" class="paragraph">
+                Once we have a design, our production team takes the lead in
+                bringing it to life. We manage all stages of the project, from
+                build specifications and technical drawings to site surveys,
+                vendor management, and 2D & 3D production. We have an extensive
+                network of partners to meet each unique design and project need.
+              </p>
+
+              <p id="para3" class="paragraph">
+                We’re with you every step of the way, from the project
+                initiation to launch day. Our production and design teams are
+                onsite to direct and guide the process down to the last point of
+                completion, ensuring success across the built space and
+                experience.
+              </p>
+            </div>
+          </div>
+
+          <div class="box2">
+            <img
+              id="displayed-image"
+              src="asset/image/textimg1.webp"
+              alt="Display Image"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="page5">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="brand">
+                <img src="asset/logos/nike.svg" alt="" />
+              </div>
+              <div class="para">
+                Retained Production support across retail and events in NY, CHI,
+                LA. Creative Design, Design Management, Production/Project
+                Management, and execution of work from concept to installation
+                across the Country.
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="brand">
+                <img src="asset/logos/Converse.svg" alt="" />
+              </div>
+              <div class="para">
+                Creative Concepting, Design, Design Management, Project
+                Management, and execution of work from concept to installation
+                across the Country. Cross functional communication and
+                management of third party partners.
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="brand">
+                <img src="asset/logos/the-north.png" id="north" />
+              </div>
+              <div class="para">
+                Creative Concepting, 2D &amp;&nbsp;3D Design, Design Management
+                for work in NYC&nbsp;and across the country...
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="brand">
+                <img src="asset/logos/Arc’teryx.svg" alt="" />
+              </div>
+              <div class="para">
+                Production and design along with install oversight and execution
+                support for the SoHo store opening on Broadway St, New York.
+                Also working on creative and production work for a new store
+                opening in Glendale, California.
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="brand">
+                <img src="asset/logos/Hunter.svg" alt="" />
+              </div>
+              <div class="para">
+                Design and Production partner for Hunter Holiday 2022 Pop-in at
+                Nordstrom New York, including activations in Women’s, Men’s and
+                Kid’s zones. Concept design for Holiday boot customization
+                events in stores across winter 2022.
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="brand">
+                <img src="asset/logos/MediaLink.svg" alt="" />
+              </div>
+              <div class="para">
+                Creative, Design, and Production Partner for 2023 CES. Scope
+                Included creation of Branding Identity, Assets, and Digital
+                Content, Design, Production design, Production oversight.
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="brand">
+                <img src="asset/logos/AfterPay.svg" alt="" />
+              </div>
+              <div class="para">
+                Creative, Design, and Production Partner for 2022 NY Fashion
+                Week Pop-Up space. Production/Partner oversight and creation of
+                a two (2) story pop-up for Afterpay’s clients such as Crocs, JD
+                Sports, Container Store, &amp; Revolve.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="page6"></div>
+    </div>
+
+    <div id="footer">
+     <div class="foot1">
+        <div class="foot1-1">
+          <h1>Work</h1>
+          <h1>Studio</h1>
+          <h1>Contact</h1>
+        </div>
+        <div class="foot1-2">
+          <p>Get industry insights and creative <br>inspiration straight to your inbox.</p>
+        </div>
+     </div>
+
+     <div class="foot2">
+      Sundown
+     </div>
+
+     <div class="foot3">
+      <h5>Copyright © Sundown Studio</h5>
+      <h5> Brooklyn, NY</h5>
+      <h5 id="line">Instagram</h5>
+      <h5 id="line" >LinkedIn</h5>
+     </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

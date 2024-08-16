@@ -1,81 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
 
-        .hero-shape{
+    .hero-shape {
     position: absolute;
-    height: 80vh;
-    width: 60vw;
-    top: 100px ;
-    left: 100px;
-    margin:  15px auto;
-}
-
-.hero1{
-    height: 100%;
     width: 100%;
-    position: absolute;
-    background-color: red;
-    border-radius: 200px;
-    filter: blur(25px);
+    height: 100vh;
+    right: 0;
+    top: 65vh;
 }
-
-
-    .hero2{
-        width: 33vw;
-        height: 50vh;
-        border-radius: 50%;
-        background: linear-gradient(#FE320A, #fe3f0a);
-        filter: blur(25px);
-        position: absolute;
-        top: 1vw;
-        left:-5vh;
-        animation: ball 4s linear infinite alternate;
-    }
-
-    .hero3{
-        width: 35vw;
-        height:50%;
-        left: 27vh;
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
-        position: absolute;
-        background: linear-gradient(#FE320A, #fe3f0a);
-        filter: blur(25px);
-        animation: ball2 4s linear infinite alternate;
-    }
-
-
-   @keyframes ball {
-       from {
-        transform: translate(5%, -5%);
-    }
-
-    to {
-        transform: translate(-6%, 11%);
-    }
-    }
-
-    @keyframes ball2 {
-        from {
-        transform: translate(55%, -3%);
-    }
-
-    to {
-        transform: translate(0%, 10%);
-    }
-    }*/
-    </style>
+  </style>
 </head>
 <body>
-    <div class="hero-shape">
-        <div class="hero1"></div>
-        <div class="hero2"></div>
-        <div class="hero3"></div>
-     </div>
+
+  <div class="hero-shape">
+
+    <div class="hero1"></div>
+    <div class="hero2"></div>
+    <div class="hero3"></div>
+    <div class="hero4"></div>
+
+  </div>
+
 </body>
 </html>
