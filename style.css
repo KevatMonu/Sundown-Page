@@ -23,6 +23,11 @@
     font-family: neu;
 }
 
+*::selection{
+    background-color: #000;
+    color: #fff;
+}
+
 html,body{
     width: 100%;
     height: 100%;
@@ -39,14 +44,15 @@ html,body{
 nav {
     padding: 2vw 0vw;
     width: 100%;
-    /* background-color: red; */
     display: flex;
     align-items: center;
     position: relative;
-    z-index: 100;
     justify-content: space-between;
 }
 
+.Menu{
+    display: none;
+}
 .nav-elem{
     display: flex;
     align-items: center;
@@ -328,8 +334,8 @@ nav {
 .banner h1{ 
     font-size: 3.5vw;
     padding: 0 4vw;
-    z-index: 9;
-}
+    z-index: 9; 
+}   
 
 .banner-tittle2{
     display: flex;
@@ -445,7 +451,6 @@ nav {
 }
 
 #page5 {
-    min-height: 70vh;
     width: 100%;
     background-color: #EFEAE3;
     padding: 4vw 2vw;
@@ -462,7 +467,7 @@ nav {
     width: 30%;
      height: 40vh;
     text-align: start;
-    font-size: 18px;
+    font-size: 1.2rem;
     border-left:1px solid #3a3a3ac6;
     display: flex;
     flex-direction: column;
@@ -470,8 +475,22 @@ nav {
     align-items: flex-start;
     gap: 35px;
     padding: 1vw 2vw;
+    animation-name: swipe;
+    animation-duration: 10s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
   }
 
+  @keyframes swipe {
+    from{
+        transform: translate(-360%);
+    }
+    to{
+        transform: translate(0);
+    }
+  }
   .swiper-slide img {
     display: block;
     width: 100%;
@@ -480,8 +499,8 @@ nav {
   }
  
   .para{
-    font-size: 1.3rem;
-    width: 75%;
+    font-size: 1rem;
+    max-width: 75%;
     line-height: 1.4;
     font-weight: 300;
   }
@@ -520,6 +539,9 @@ nav {
     padding: 2vw 3vw;
  }
 
+ .foot1-1, .foot1-2{
+    z-index: 1;
+ }
  .foot1-1 h1{
     font-size: 2.9rem;
  }
@@ -547,3 +569,406 @@ nav {
     margin: 1rem;
  }
 
+ .gol {
+    position: relative;
+    width: 100%;
+    top: 0;
+}
+
+.gol1{
+  position: absolute;
+  height: 70vh;
+  width: 100%;
+  background: linear-gradient(#FE320A, #fe3f0a);
+  border-radius:100px;
+  animation: hero1 4s linear infinite alternate;
+  left: -30%;
+  top: -60vw;
+  filter: blur(35px);
+  overflow: hidden;
+}
+
+  @keyframes hero1 {
+    from{
+        transform: rotate(-20deg);
+    }
+    to{
+      transform: rotate(-16deg);
+    }
+  }
+
+  .gol2{
+  position: absolute;
+  height: 60vh;
+  width: 45vw;
+  background: linear-gradient(#FE320A, #fe3f0a);
+  border-radius: 15px;
+  animation: hero2 4s linear infinite alternate;
+  right: -18%;
+  top: -50vw;
+  filter: blur(35px);
+}
+
+@keyframes hero2 {
+    from{
+        transform: rotate(50deg);
+    }
+    to{
+      transform: rotate(40deg);
+    }
+  }
+
+  .gol3{
+    height: 30vh;
+    width: 30vw;
+    background: linear-gradient(#FE320A, #fe3f0a);
+    position: absolute;
+    animation: hero3 4s linear infinite alternate;
+    left: 55%;
+    top: -53vw;
+    filter: blur(35px);
+  }
+
+  @keyframes hero3 {
+    from{
+        transform: translateY(-10%);
+    }
+    to{
+        transform: translateY(10%);
+    }
+  }
+
+  .banner-img{
+    display: none;
+  }
+
+  .fullscr{
+    height: 100vh;
+    width: 100%;
+    background-color: #3130308c;
+    position: fixed;
+    z-index: 99;
+    top: -100% ;
+    transition: all ease 0.8s;
+  }
+  @media (max-width:600px){
+    #page1 {
+        min-height: 100vh;
+        width: 100%;
+        background-color: #EFEAE3;
+        position: relative;
+        padding: 0 2vw;
+    }
+    .logo img{
+        scale: 0.8;
+        transition: all ease 0.3s;
+    }
+
+    .Menu{
+        padding: 4vw 6vw;
+        font-size:5vw;
+        border-radius: 50px;
+        border: 1px solid #545151ae;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.7rem;
+        font-weight: 200;
+    }  
+    .Menu i{
+        font-weight: 500;
+    } 
+    nav {
+        padding: 2vw 0vw;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 100;
+    }
+    
+    .nav-elem{
+        display: none;
+    }
+    
+
+    .center{
+        height: 65vh;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;           
+        padding-bottom: 3vw;
+        padding: 6vw  3vw;
+        border-bottom: 1px solid #0000003c;
+        flex-direction: column-reverse;
+    }
+    
+    .left h3{
+        width: 85%;
+        font-size: 6vw;
+        line-height: 9vw;
+    }
+    
+    .right h1{
+        font-size: 18vw;
+        text-align: right;
+        line-height: 16vw;
+        padding: 2vw 4vw;
+    }
+    
+    .hero-shape {
+        position: absolute;
+        width: 60vw;
+        height: 56vw;
+        right: -5vw;
+        top: 70vh;
+    }
+    
+    .hero2 {  
+        height: 30vw;
+        width: 30vw;
+    }
+    
+    .hero3 {
+        height: 30vw;
+        width: 30vw;
+    }
+    
+    #page1 video{
+        position: relative;
+        width: 100%;
+        border-radius: 5vw;
+        height: 67vh;
+        object-fit: cover;
+        object-position: center;
+        padding: 2vw 2vw;
+     }
+    
+     #ball{
+        height: 5vw;
+        width: 5vw;
+        background-color: #FE320A;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 3px 15px;
+     }
+    
+     .move h1{
+        font-size: 10vw;
+        display: inline-block;
+    
+     }
+
+
+     #page2-bottom{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding: 6vw 3vw;
+        flex-direction: column;
+     }
+    
+     .part2 img{
+        width: 75%;
+        border-radius: 15px;
+     }
+     .part1{
+        width: 100%;
+        z-index: 99;
+     }
+     .part1 h1{
+        font-size: 6vw;
+     }
+     .part2{
+        width: 90%;
+        padding: 3vw 2vw;
+        z-index: 99;
+     }
+    
+     .part2 p{
+        font-weight: 100;
+        font-size: 7vw;
+        padding-top: 3rem;
+        line-height: 1.2;
+     }
+     .golaa{ 
+        height: 55vw;
+        width: 55vw;
+        top: 10%;
+        left: 46%;
+     }
+
+     .fixed-img {
+        display: none;
+     }
+
+     .banner-img{
+        height: 55vh;
+        width: 100%;
+        border-radius: 20px;
+        display: block;
+      }
+  
+      .banner-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 20px;
+      }
+
+      .banner{
+        height: 75vh;
+        width: 100%;
+        padding: 4vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border: none;
+      }
+
+      .banner::after{
+        display: none;
+      }
+
+      .banner h1{
+        font-size: 7.5vw;
+        padding-top: 3vw;
+        padding-left: 3vw;
+      }
+
+      .banner-tittle2 h3{
+        font-size: 5vw;
+        padding: 1vw 1vw 1vw 1vw;
+      }
+
+      .banner-tittle2 h4{
+        font-size: 5vw;
+        padding: 1vw 1vw 1vw 1vw;
+      }
+
+      #nike{
+        padding: 1vw 16vw 1vw 1vw;
+      }
+
+      #cap{
+        padding: 1vw 7vw 1vw 1vw;
+      }
+
+      #p-right{
+        padding-right: 48vw;
+      }
+
+  
+    .back-box{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box1{
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        padding-top: 13vw;
+        padding-left: 8vw;
+    }
+    
+    
+    .box2{
+        width: 100%;
+        height: 100%;
+        border-radius:10px ;
+    }
+    
+    .box1-1 h1{
+        font-size: 10.3vw;
+        padding-left: 3vw;
+    }
+    .box1-2 p{
+        font-size: 3.7vw;
+        line-height: 1.9;
+        padding-top: 3vw;
+    }
+    .box2{
+        padding: 2vw;
+    }
+
+    #page5{
+        padding: 11vw 2vw;
+    }
+    .swiper-slide {
+        width: 85%;
+        padding: 3vw;
+    }
+
+    .brand img {
+        height: 17vw;
+    }
+    .para {
+        font-size: 4.5vw;
+        max-width: 100%;
+        line-height: 1.4;
+        font-weight: 300;
+    }
+
+    #north{
+        height: 40vw;
+    }
+    @keyframes swipe {
+        from{
+            transform: translate(-650%);
+        }
+        to{
+            transform: translate(0);
+        }
+      }
+
+      #page6{
+        height: 60vh;
+        width: 100%;
+      }
+
+
+      #footer{
+        height: 60vh;
+      }
+      .foot1{
+        display: flex;
+        flex-direction: column;
+      }
+    .foot1-1{
+        padding-top: 2vw;
+    }
+      .foot1-1 h1{
+        font-size: 9vw;
+      }
+      .foot1-2 p{
+        padding-top: 6vw;
+        font-size: 5vw;
+      }
+
+      .foot3{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+      }
+
+      .foot2{
+        line-height: 1.4;
+      }
+
+      .foot3 h5{
+        font-size: 5vw;
+      }
+
+      .gol3 , .gol2{
+        display: none;
+      }
+
+      .gol1{
+        left: 14%;
+     top: -200vw;
+      }
+  }

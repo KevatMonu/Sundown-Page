@@ -7,25 +7,34 @@ const scroll = new LocomotiveScroll({
 
 
 
-var banner = document.querySelector(".banner-list")
-var fixed = document.querySelector(".fixed-img")
-banner.addEventListener("mouseenter",function(){
-    fixed.style.display ="block"
-})
+function banner() {
+    if (window.innerWidth > 600) {
+        var banner = document.querySelector(".banner-list");
+        var fixed = document.querySelector(".fixed-img");
 
-banner.addEventListener("mouseleave",function(){
-    fixed.style.display ="none"
-})
+        banner.addEventListener("mouseenter", function() {
+            fixed.style.display = "block";
+        });
 
+        banner.addEventListener("mouseleave", function() {
+            fixed.style.display = "none";
+        });
 
-var bg = document.querySelectorAll(".banner")
-bg.forEach(function(e){
-    e.addEventListener("mouseenter",function(){
-        var image = e.getAttribute("data-image")
-        fixed.style.backgroundImage = `url(${image})`
-    })
-})
+        var bg = document.querySelectorAll(".banner");
+        bg.forEach(function(e) {
+            e.addEventListener("mouseenter", function() {
+                var image = e.getAttribute("data-image");
+                fixed.style.backgroundImage = `url(${image})`;
+            });
+        });
+    }
+}
 
+document.addEventListener("DOMContentLoaded", banner);
+
+window.addEventListener("resize", function() {
+    banner();
+});
 
 
 const paragraphs = [
@@ -73,7 +82,26 @@ function changeContent(index, imageSrc) {
 changeContent(0, 'asset/image/textimg1.webp');
 
 
+
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: "auto",
     spaceBetween: 30,
+  });
+
+
+  var menu = document.querySelector(".Menu");
+  var full = document.querySelector(".fullscr");
+  var navimg = document.querySelector(".logo img");
+  var flag = 0;
+
+  menu.addEventListener("click", function() {
+    if (flag == 0) {
+      full.style.top = "0";
+      navimg.style.opacity = "0";
+      flag = 1;
+    } else {
+      full.style.top = "-100%";
+      navimg.style.opacity = "1";
+      flag = 0;
+    }
   });

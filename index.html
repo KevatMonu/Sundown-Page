@@ -10,13 +10,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="fixed-img"></div>
-
+  
     <div id="main">
-      <div id="page1">
+     <div id="page1">
         <nav>
           <div class="logo">
             <img src="logo.svg" alt="" />
@@ -26,6 +30,7 @@
             <h4><a href="#">Studio</a></h4>
             <h4><a href="#">Contact</a></h4>
           </div>
+          <div class="Menu"><i class="ri-menu-line"></i>Menu</div>
         </nav>
 
         <div class="center">
@@ -105,7 +110,10 @@
 
       <div id="page3">
         <div class="banner-list">
-          <div class="banner" data-image="asset/image/banner1.jpeg">
+          <div class="banner" data-image="asset/image/banner1.webp">
+            <div class="banner-img">
+              <img src="asset/image/banner1.webp" alt="">
+            </div>
             <h1>NYFW Popup</h1>
             <div class="banner-tittle2">
               <h3>AFTERPAY</h3>
@@ -113,7 +121,10 @@
             </div>
           </div>
 
-          <div class="banner" data-image="asset/image/banner2.jpeg">
+          <div class="banner" data-image="asset/image/banner2.jpg">
+            <div class="banner-img">
+              <img src="asset/image/banner2.jpg" alt="">
+            </div>
             <h1>Converse SoHo</h1>
             <div class="banner-tittle2">
               <h3>CONVERSE</h3>
@@ -122,49 +133,67 @@
           </div>
 
           <div class="banner" data-image="asset/image/banner3.jpeg">
+            <div class="banner-img">
+              <img src="asset/image/banner3.jpeg" alt="">
+            </div>
             <h1>50th Anniversary</h1>
             <div class="banner-tittle2">
-              <h3>NIKE</h3>
+              <h3 id="nike">NIKE</h3>
               <h4>Environment</h4>
             </div>
           </div>
 
           <div class="banner" data-image="asset/image/banner4.jpeg">
+            <div class="banner-img">
+              <img src="asset/image/banner4.jpeg" alt="">
+            </div>
             <h1>Carmelo Anthony 7pm In Brooklyn Set</h1>
             <div class="banner-tittle2">
               <h3>WAVE SPORTS ENTERTAINMENT</h3>
-              <h4>Environment</h4>
+              <h4 id="p-right">Environment</h4>
             </div>
           </div>
 
           <div class="banner" data-image="asset/image/banner5.jpeg">
+            <div class="banner-img">
+              <img src="asset/image/banner5.jpeg" alt="">
+            </div>
             <h1>Makers Studio HOI</h1>
             <div class="banner-tittle2">
-              <h3>NIKE</h3>
+              <h3 id="nike">NIKE</h3>
               <h4>Environment</h4>
             </div>
           </div>
 
           <div class="banner" data-image="asset/image/banner6.jpeg">
+            <div class="banner-img">
+              <img src="asset/image/banner6.jpeg" alt="">
+            </div>
             <h1>Play New Kidvision</h1>
             <div class="banner-tittle2">
-              <h3>NIKE</h3>
+              <h3 id="nike">NIKE</h3>
               <h4>Environment</h4>
             </div>
           </div>
 
-          <div class="banner" data-image="asset/image/banner7.jpeg">
+          <div class="banner" data-image="asset/image/banner7.webp">
+            <div class="banner-img">
+              <img src="asset/image/banner7.webp" alt="">
+            </div>
             <h1>Kelce Super Bowl Party</h1>
             <div class="banner-tittle2">
               <h3>WAVE SPORTS ENTERTAINMENT</h3>
-              <h4>Environment</h4>
+              <h4 id="p-right">Environment</h4>
             </div>
           </div>
 
           <div class="banner" data-image="asset/image/banner8.jpeg">
+            <div class="banner-img">
+              <img src="asset/image/banner8.jpeg" alt="">
+            </div>
             <h1>Capezio NYC Flagship</h1>
             <div class="banner-tittle2">
-              <h3>CAPEZIO</h3>
+              <h3 id="cap">CAPEZIO</h3>
               <h4>Environment</h4>
             </div>
           </div>
@@ -232,95 +261,97 @@
       </div>
 
       <div id="page5">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="brand">
-                <img src="asset/logos/nike.svg" alt="" />
+       
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="brand">
+                  <img src="asset/logos/nike.svg" alt="" />
+                </div>
+                <div class="para">
+                  Retained Production support across retail and events in NY, CHI,
+                  LA. Creative Design, Design Management, Production/Project
+                  Management, and execution of work from concept to installation
+                  across the Country.
+                </div>
               </div>
-              <div class="para">
-                Retained Production support across retail and events in NY, CHI,
-                LA. Creative Design, Design Management, Production/Project
-                Management, and execution of work from concept to installation
-                across the Country.
+  
+              <div class="swiper-slide">
+                <div class="brand">
+                  <img src="asset/logos/Converse.svg" alt="" />
+                </div>
+                <div class="para">
+                  Creative Concepting, Design, Design Management, Project
+                  Management, and execution of work from concept to installation
+                  across the Country. Cross functional communication and
+                  management of third party partners.
+                </div>
               </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="brand">
-                <img src="asset/logos/Converse.svg" alt="" />
+  
+              <div class="swiper-slide">
+                <div class="brand">
+                  <img src="asset/logos/the-north.png" id="north" />
+                </div>
+                <div class="para">
+                  Creative Concepting, 2D &amp;&nbsp;3D Design, Design Management
+                  for work in NYC&nbsp;and across the country...
+                </div>
               </div>
-              <div class="para">
-                Creative Concepting, Design, Design Management, Project
-                Management, and execution of work from concept to installation
-                across the Country. Cross functional communication and
-                management of third party partners.
+  
+              <div class="swiper-slide">
+                <div class="brand">
+                  <img src="asset/logos/Arc’teryx.svg" alt="" />
+                </div>
+                <div class="para">
+                  Production and design along with install oversight and execution
+                  support for the SoHo store opening on Broadway St, New York.
+                  Also working on creative and production work for a new store
+                  opening in Glendale, California.
+                </div>
               </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="brand">
-                <img src="asset/logos/the-north.png" id="north" />
+  
+              <div class="swiper-slide">
+                <div class="brand">
+                  <img src="asset/logos/Hunter.svg" alt="" />
+                </div>
+                <div class="para">
+                  Design and Production partner for Hunter Holiday 2022 Pop-in at
+                  Nordstrom New York, including activations in Women’s, Men’s and
+                  Kid’s zones. Concept design for Holiday boot customization
+                  events in stores across winter 2022.
+                </div>
               </div>
-              <div class="para">
-                Creative Concepting, 2D &amp;&nbsp;3D Design, Design Management
-                for work in NYC&nbsp;and across the country...
+  
+              <div class="swiper-slide">
+                <div class="brand">
+                  <img src="asset/logos/MediaLink.svg" alt="" />
+                </div>
+                <div class="para">
+                  Creative, Design, and Production Partner for 2023 CES. Scope
+                  Included creation of Branding Identity, Assets, and Digital
+                  Content, Design, Production design, Production oversight.
+                </div>
               </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="brand">
-                <img src="asset/logos/Arc’teryx.svg" alt="" />
-              </div>
-              <div class="para">
-                Production and design along with install oversight and execution
-                support for the SoHo store opening on Broadway St, New York.
-                Also working on creative and production work for a new store
-                opening in Glendale, California.
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="brand">
-                <img src="asset/logos/Hunter.svg" alt="" />
-              </div>
-              <div class="para">
-                Design and Production partner for Hunter Holiday 2022 Pop-in at
-                Nordstrom New York, including activations in Women’s, Men’s and
-                Kid’s zones. Concept design for Holiday boot customization
-                events in stores across winter 2022.
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="brand">
-                <img src="asset/logos/MediaLink.svg" alt="" />
-              </div>
-              <div class="para">
-                Creative, Design, and Production Partner for 2023 CES. Scope
-                Included creation of Branding Identity, Assets, and Digital
-                Content, Design, Production design, Production oversight.
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="brand">
-                <img src="asset/logos/AfterPay.svg" alt="" />
-              </div>
-              <div class="para">
-                Creative, Design, and Production Partner for 2022 NY Fashion
-                Week Pop-Up space. Production/Partner oversight and creation of
-                a two (2) story pop-up for Afterpay’s clients such as Crocs, JD
-                Sports, Container Store, &amp; Revolve.
+  
+              <div class="swiper-slide">
+                <div class="brand">
+                  <img src="asset/logos/AfterPay.svg" alt="" />
+                </div>
+                <div class="para">
+                  Creative, Design, and Production Partner for 2022 NY Fashion
+                  Week Pop-Up space. Production/Partner oversight and creation of
+                  a two (2) story pop-up for Afterpay’s clients such as Crocs, JD
+                  Sports, Container Store, &amp; Revolve.
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        
       </div>
       
       <div id="page6"></div>
-    </div>
-
+    </div> 
+    <div class="fullscr"></div>
     <div id="footer">
      <div class="foot1">
         <div class="foot1-1">
@@ -343,8 +374,16 @@
       <h5 id="line">Instagram</h5>
       <h5 id="line" >LinkedIn</h5>
      </div>
+
+     <div class="gol">
+
+      <div class="gol1"></div>
+      <div class="gol3"></div>
+      <div class="gol2"></div>
+      
     </div>
-    
+
+  </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="script.js"></script>
