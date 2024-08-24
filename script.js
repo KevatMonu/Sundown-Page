@@ -89,19 +89,7 @@ var swiper = new Swiper(".mySwiper", {
   });
 
 
-  var menu = document.querySelector(".Menu");
-  var full = document.querySelector(".fullscr");
-  var navimg = document.querySelector(".logo img");
-  var flag = 0;
-
-  menu.addEventListener("click", function() {
-    if (flag == 0) {
-      full.style.top = "0";
-      navimg.style.opacity = "0";
-      flag = 1;
-    } else {
-      full.style.top = "-100%";
-      navimg.style.opacity = "1";
-      flag = 0;
-    }
-  });
+ var loader=document.querySelector("#loader")
+setTimeout(function(){
+    loader.style.top = "-100%"
+},3200)
